@@ -3,10 +3,7 @@ import NutritionFacts from './components/NutritionFacts.vue'
 </script>
 
 <template>
-  <div id="app">
-    <h1>Food Calculator</h1>
     <NutritionFacts />
-  </div>
 </template>
 
 <style>
