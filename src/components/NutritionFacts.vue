@@ -182,11 +182,16 @@ function recalculateValues() {
 </script>
 
 <style scoped>
+input {
+
+  border: 1px solid var(--color-border);
+  background: var(--color-background-soft);
+  color: var(--color-text);
+}
 .nutrition-facts {
   width: 280px;
   border: 2px solid black;
   font-family: Arial, sans-serif;
-  background: white;
   padding: 8px;
   margin: 20px;
 }
@@ -212,7 +217,6 @@ function recalculateValues() {
 
 .serving-size input {
   width: 40px;
-  border: 1px solid #ccc;
   padding: 2px 4px;
   font-size: 14px;
 }
@@ -225,7 +229,6 @@ function recalculateValues() {
 
 .servings-per-container input {
   width: 50px;
-  border: 1px solid #ccc;
   padding: 2px 4px;
   font-size: 14px;
 }
@@ -262,7 +265,6 @@ function recalculateValues() {
 
 .calories-input {
   width: 60px;
-  border: 1px solid #ccc;
   padding: 4px;
   font-size: 18px;
   font-weight: bold;
@@ -311,7 +313,6 @@ function recalculateValues() {
 
 .nutrient-amount input {
   width: 40px;
-  border: 1px solid #ccc;
   padding: 2px 4px;
   font-size: 14px;
   text-align: right;
@@ -360,5 +361,24 @@ input:read-only {
 
 .reset-btn:hover {
   background-color: #545b62;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .nutrition-facts {
+    border-color: #666;
+  }
+  
+  .thick-line {
+    background-color: #666;
+  }
+  
+  .medium-line {
+    background-color: #666;
+  }
+  
+  .nutrient-row {
+    border-bottom-color: #555;
+  }
 }
 </style> 
