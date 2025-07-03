@@ -5,12 +5,12 @@
     <div class="serving-info">
       <div class="serving-size">
         <span>Serving Size</span>
-        <input v-model="servingSize" type="text" placeholder="228" :readonly="baseValuesSet" />
+        <input v-model="servingSize" type="text" placeholder="228" :readonly="baseValuesSet" inputmode="numeric" pattern="[0-9]*" />
         <span>g</span>
       </div>
       <div class="servings-per-container">
         <span>Total Amount in Container</span>
-        <input v-model="servingsPerContainer" type="text" placeholder="456" :readonly="baseValuesSet" />
+        <input v-model="servingsPerContainer" type="text" placeholder="456" :readonly="baseValuesSet" inputmode="numeric" pattern="[0-9]*" />
         <span>g</span>
       </div>
     </div>
@@ -21,7 +21,7 @@
       <div class="amount-per-serving">Amount Per Serving</div>
       <div class="calories-row">
         <span class="calories-label">Calories</span>
-        <input v-model="calories" type="text" placeholder="250" class="calories-input" :readonly="baseValuesSet" />
+        <input v-model="calories" type="text" placeholder="250" class="calories-input" :readonly="baseValuesSet" inputmode="numeric" pattern="[0-9]*" />
       </div>
     </div>
 
@@ -31,7 +31,7 @@
       <div class="nutrient-row">
         <span class="nutrient-label">Total Fat</span>
         <div class="nutrient-amount">
-          <input v-model="totalFat" type="text" placeholder="12" @input="recalculateValues" />
+          <input v-model="totalFat" type="text" placeholder="12" @input="recalculateValues" inputmode="numeric" pattern="[0-9]*" />
           <span>g</span>
         </div>
       </div>
@@ -39,7 +39,7 @@
       <div class="nutrient-row sub-nutrient">
         <span class="nutrient-label sub-label">Saturated Fat</span>
         <div class="nutrient-amount">
-          <input v-model="saturatedFat" type="text" placeholder="3" />
+          <input v-model="saturatedFat" type="text" placeholder="3" inputmode="numeric" pattern="[0-9]*" />
           <span>g</span>
         </div>
       </div>
@@ -47,7 +47,7 @@
       <div class="nutrient-row">
         <span class="nutrient-label sub-label">Cholesterol</span>
         <div class="nutrient-amount">
-          <input v-model="cholesterol" type="text" placeholder="30" />
+          <input v-model="cholesterol" type="text" placeholder="30" inputmode="numeric" pattern="[0-9]*" />
           <span>mg</span>
         </div>
       </div>
@@ -55,7 +55,7 @@
       <div class="nutrient-row">
         <span class="nutrient-label sub-label">Sodium</span>
         <div class="nutrient-amount">
-          <input v-model="sodium" type="text" placeholder="470" />
+          <input v-model="sodium" type="text" placeholder="470" inputmode="numeric" pattern="[0-9]*" />
           <span>mg</span>
         </div>
       </div>
@@ -63,7 +63,7 @@
       <div class="nutrient-row">
         <span class="nutrient-label">Total Carbohydrate</span>
         <div class="nutrient-amount">
-          <input v-model="totalCarbs" type="text" placeholder="31" @input="recalculateValues" />
+          <input v-model="totalCarbs" type="text" placeholder="31" @input="recalculateValues" inputmode="numeric" pattern="[0-9]*" />
           <span>g</span>
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div class="nutrient-row sub-nutrient">
         <span class="nutrient-label sub-label">Dietary Fiber</span>
         <div class="nutrient-amount">
-          <input v-model="dietaryFiber" type="text" placeholder="0" />
+          <input v-model="dietaryFiber" type="text" placeholder="0" inputmode="numeric" pattern="[0-9]*" />
           <span>g</span>
         </div>
       </div>
@@ -79,7 +79,7 @@
       <div class="nutrient-row sub-nutrient">
         <span class="nutrient-label sub-label">Sugars</span>
         <div class="nutrient-amount">
-          <input v-model="sugars" type="text" placeholder="5" />
+          <input v-model="sugars" type="text" placeholder="5" inputmode="numeric" pattern="[0-9]*" />
           <span>g</span>
         </div>
       </div>
@@ -87,7 +87,7 @@
       <div class="nutrient-row">
         <span class="nutrient-label">Protein</span>
         <div class="nutrient-amount">
-          <input v-model="protein" type="text" placeholder="5" @input="recalculateValues" />
+          <input v-model="protein" type="text" placeholder="5" @input="recalculateValues" inputmode="numeric" pattern="[0-9]*" />
           <span>g</span>
         </div>
       </div>
